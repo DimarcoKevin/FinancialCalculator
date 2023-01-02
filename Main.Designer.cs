@@ -27,6 +27,7 @@
             this.incomeTextBox = new System.Windows.Forms.TextBox();
             this.provinceLabel = new System.Windows.Forms.Label();
             this.provinceListBox = new System.Windows.Forms.ListBox();
+            this.calcButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // incomeLabel
@@ -50,7 +51,7 @@
             // 
             this.provinceLabel.AutoSize = true;
             this.provinceLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.provinceLabel.Location = new System.Drawing.Point(73, 132);
+            this.provinceLabel.Location = new System.Drawing.Point(73, 123);
             this.provinceLabel.Name = "provinceLabel";
             this.provinceLabel.Size = new System.Drawing.Size(85, 25);
             this.provinceLabel.TabIndex = 2;
@@ -75,16 +76,27 @@
             "Quebec",
             "Saskatchewan",
             "Yukon"});
-            this.provinceListBox.Location = new System.Drawing.Point(73, 160);
+            this.provinceListBox.Location = new System.Drawing.Point(73, 151);
             this.provinceListBox.Name = "provinceListBox";
             this.provinceListBox.Size = new System.Drawing.Size(169, 29);
             this.provinceListBox.TabIndex = 3;
+            // 
+            // calcButton
+            // 
+            this.calcButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.calcButton.Location = new System.Drawing.Point(113, 190);
+            this.calcButton.Name = "calcButton";
+            this.calcButton.Size = new System.Drawing.Size(88, 29);
+            this.calcButton.TabIndex = 4;
+            this.calcButton.Text = "Calculate";
+            this.calcButton.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1187, 634);
+            this.Controls.Add(this.calcButton);
             this.Controls.Add(this.provinceListBox);
             this.Controls.Add(this.provinceLabel);
             this.Controls.Add(this.incomeTextBox);
@@ -102,5 +114,6 @@
         private TextBox incomeTextBox;
         private Label provinceLabel;
         private ListBox provinceListBox;
+        private Button calcButton;
     }
 }
