@@ -28,6 +28,8 @@
             this.provinceLabel = new System.Windows.Forms.Label();
             this.provinceListBox = new System.Windows.Forms.ListBox();
             this.calcButton = new System.Windows.Forms.Button();
+            this.takeHomeLabel = new System.Windows.Forms.Label();
+            this.takeHomeResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // incomeLabel
@@ -46,6 +48,7 @@
             this.incomeTextBox.Name = "incomeTextBox";
             this.incomeTextBox.Size = new System.Drawing.Size(169, 23);
             this.incomeTextBox.TabIndex = 1;
+            this.incomeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // provinceLabel
             // 
@@ -91,11 +94,35 @@
             this.calcButton.Text = "Calculate";
             this.calcButton.UseVisualStyleBackColor = true;
             // 
+            // takeHomeLabel
+            // 
+            this.takeHomeLabel.AutoSize = true;
+            this.takeHomeLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.takeHomeLabel.Location = new System.Drawing.Point(88, 272);
+            this.takeHomeLabel.Name = "takeHomeLabel";
+            this.takeHomeLabel.Size = new System.Drawing.Size(138, 25);
+            this.takeHomeLabel.TabIndex = 5;
+            this.takeHomeLabel.Text = "Take Home Pay";
+            this.takeHomeLabel.Visible = false;
+            // 
+            // takeHomeResult
+            // 
+            this.takeHomeResult.AutoSize = true;
+            this.takeHomeResult.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.takeHomeResult.Location = new System.Drawing.Point(127, 310);
+            this.takeHomeResult.Name = "takeHomeResult";
+            this.takeHomeResult.Size = new System.Drawing.Size(60, 25);
+            this.takeHomeResult.TabIndex = 6;
+            this.takeHomeResult.Text = "TEMP";
+            this.takeHomeResult.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1187, 634);
+            this.Controls.Add(this.takeHomeResult);
+            this.Controls.Add(this.takeHomeLabel);
             this.Controls.Add(this.calcButton);
             this.Controls.Add(this.provinceListBox);
             this.Controls.Add(this.provinceLabel);
@@ -115,5 +142,7 @@
         private Label provinceLabel;
         private ListBox provinceListBox;
         private Button calcButton;
+        private Label takeHomeLabel;
+        private Label takeHomeResult;
     }
 }
