@@ -10,13 +10,20 @@ namespace FinancialCalculator {
             long income;
             String province;
 
-            // grabbing variables
-            if (long.TryParse(incomeTextBox.Text, out income));
-            province = provinceListBox.Text.Trim();
-
             // showing take home labels
             takeHomeLabel.Visible = true;
             takeHomeResult.Visible = true;
+
+            // grabbing province and validating income
+            province = provinceListBox.Text.Trim();
+            if (long.TryParse(incomeTextBox.Text, out income)) {
+            } else {
+                takeHomeResult.Text = "Income must be a numeric value";
+                return;
+            }
+            
+
+            
             
             
         }
