@@ -36,17 +36,19 @@
             // 
             this.incomeLabel.AutoSize = true;
             this.incomeLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.incomeLabel.Location = new System.Drawing.Point(73, 56);
+            this.incomeLabel.Location = new System.Drawing.Point(31, 56);
             this.incomeLabel.Name = "incomeLabel";
             this.incomeLabel.Size = new System.Drawing.Size(169, 25);
             this.incomeLabel.TabIndex = 0;
             this.incomeLabel.Text = "Pre-Tax Income ($)";
+            this.incomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // incomeTextBox
             // 
-            this.incomeTextBox.Location = new System.Drawing.Point(73, 84);
+            this.incomeTextBox.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.incomeTextBox.Location = new System.Drawing.Point(31, 84);
             this.incomeTextBox.Name = "incomeTextBox";
-            this.incomeTextBox.Size = new System.Drawing.Size(169, 23);
+            this.incomeTextBox.Size = new System.Drawing.Size(169, 32);
             this.incomeTextBox.TabIndex = 1;
             this.incomeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -54,11 +56,12 @@
             // 
             this.provinceLabel.AutoSize = true;
             this.provinceLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.provinceLabel.Location = new System.Drawing.Point(73, 123);
+            this.provinceLabel.Location = new System.Drawing.Point(31, 123);
             this.provinceLabel.Name = "provinceLabel";
             this.provinceLabel.Size = new System.Drawing.Size(85, 25);
-            this.provinceLabel.TabIndex = 2;
+            this.provinceLabel.TabIndex = 0;
             this.provinceLabel.Text = "Province";
+            this.provinceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // provinceListBox
             // 
@@ -79,26 +82,27 @@
             "Quebec",
             "Saskatchewan",
             "Yukon"});
-            this.provinceListBox.Location = new System.Drawing.Point(73, 151);
+            this.provinceListBox.Location = new System.Drawing.Point(28, 151);
             this.provinceListBox.Name = "provinceListBox";
-            this.provinceListBox.Size = new System.Drawing.Size(169, 29);
+            this.provinceListBox.Size = new System.Drawing.Size(276, 329);
             this.provinceListBox.TabIndex = 3;
             // 
             // calcButton
             // 
             this.calcButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.calcButton.Location = new System.Drawing.Point(113, 190);
+            this.calcButton.Location = new System.Drawing.Point(113, 498);
             this.calcButton.Name = "calcButton";
             this.calcButton.Size = new System.Drawing.Size(88, 29);
             this.calcButton.TabIndex = 4;
             this.calcButton.Text = "Calculate";
             this.calcButton.UseVisualStyleBackColor = true;
+            this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
             // 
             // takeHomeLabel
             // 
             this.takeHomeLabel.AutoSize = true;
             this.takeHomeLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.takeHomeLabel.Location = new System.Drawing.Point(88, 272);
+            this.takeHomeLabel.Location = new System.Drawing.Point(88, 541);
             this.takeHomeLabel.Name = "takeHomeLabel";
             this.takeHomeLabel.Size = new System.Drawing.Size(138, 25);
             this.takeHomeLabel.TabIndex = 5;
@@ -109,7 +113,7 @@
             // 
             this.takeHomeResult.AutoSize = true;
             this.takeHomeResult.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.takeHomeResult.Location = new System.Drawing.Point(127, 310);
+            this.takeHomeResult.Location = new System.Drawing.Point(127, 579);
             this.takeHomeResult.Name = "takeHomeResult";
             this.takeHomeResult.Size = new System.Drawing.Size(60, 25);
             this.takeHomeResult.TabIndex = 6;
