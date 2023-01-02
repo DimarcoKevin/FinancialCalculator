@@ -5,10 +5,14 @@ namespace FinancialCalculator {
         }
 
         private void calcButton_Click(object sender, EventArgs e) {
-            double[] fedTaxRates = {15, 20.5, 26, 29, 33};
-            long[] fedTaxBrackets = {50_195, 100_392, 155_625, 221_708, 100_000_000};
-            long income;
             String province;
+            double[] fedTaxRates = {15, 20.5, 26, 29, 33};
+            long[] fedTaxBrackets = {0, 50_195, 100_392, 155_625, 221_708};
+            double income;
+            double takehome;
+            double fedTaxes;
+            double provTaxes;
+            
 
             // showing take home labels
             takeHomeLabel.Visible = true;
@@ -16,7 +20,7 @@ namespace FinancialCalculator {
 
             // grabbing province and validating income
             province = provinceListBox.Text.Trim();
-            if (long.TryParse(incomeTextBox.Text, out income)) {
+            if (double.TryParse(incomeTextBox.Text, out income)) {
             } else {
                 takeHomeResult.Text = "Income must be a numeric value";
                 return;
