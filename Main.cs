@@ -61,7 +61,10 @@ namespace FinancialCalculator {
             // calculating takehome pay
             takehome = income - fedTaxes - provTaxes;
 
-
+            // setting display values
+            takeHomeResult.Text = takehome.ToString();
+            fedTaxResult.Text = fedTaxes.ToString();
+            provTaxResult.Text = provTaxRates.ToString();
 
         }
 
