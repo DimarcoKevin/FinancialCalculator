@@ -61,10 +61,10 @@ namespace FinancialCalculator {
             // calculating takehome pay
             takehome = income - fedTaxes - provTaxes;
 
-            // setting display values
-            takeHomeResult.Text = takehome.ToString();
-            fedTaxResult.Text = fedTaxes.ToString();
-            provTaxResult.Text = provTaxes.ToString();
+            // setting display values rounded to two decimals
+            takeHomeResult.Text = String.Format("{0:0,0.00}",takehome);
+            fedTaxResult.Text = String.Format("{0:0,0.00}", fedTaxes);
+            provTaxResult.Text = String.Format("{0:0,0.00}", provTaxes);
 
         }
 
