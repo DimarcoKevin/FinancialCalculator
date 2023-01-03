@@ -48,10 +48,43 @@ namespace FinancialCalculator {
 
             switch (province) {
                 case "Alberta":
-                    Array.Fill(brackets, 1, 2, 3);
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
                     break;
                 case "British Columbia":
-                    Array.Fill(brackets, 1, 2, 3);
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Manitoba":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "New Brunswick":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Newfoundland and Labrador":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Northwest Territories":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Nova Scotia":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Nunavut":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Ontario":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Prince Edward Island":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Quebec":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Saskatchewan":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    break;
+                case "Yukon":
+                    Array.Fill(brackets, 1, 2, 3); // not done yet
                     break;
                 default:
                     Array.Fill(brackets, 0);
