@@ -97,7 +97,7 @@ namespace FinancialCalculator {
                     Array.Fill(brackets, 1, 2, 3); // not done yet
                     break;
                 case "Ontario":
-                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    brackets = new long[] {0, 45_142, 90_287, 150_000, 220_000}; // https://www.wealthsimple.com/en-ca/learn/ontario-tax-brackets
                     break;
                 case "Prince Edward Island":
                     Array.Fill(brackets, 1, 2, 3); // not done yet
@@ -148,7 +148,7 @@ namespace FinancialCalculator {
                     Array.Fill(rates, 1, 2, 3); // not done yet
                     break;
                 case "Ontario":
-                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    rates = new double[] {0.0505, 0.0915, 0.1116, 0.1216, 0.1316}; // https://www.wealthsimple.com/en-ca/learn/ontario-tax-brackets
                     break;
                 case "Prince Edward Island":
                     Array.Fill(rates, 1, 2, 3); // not done yet
