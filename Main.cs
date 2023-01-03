@@ -47,9 +47,17 @@ namespace FinancialCalculator {
             // grabbing provincial tax rates/brackets
             double[] provTaxRates = getProvTaxRates(province);
             long[] provTaxBrackets = getProvTaxBrackets(province);
+            tempIncome = income;
 
             // calculating provincial taxes
-            
+            for (int i = provTaxBrackets.Length - 1; i >= 0; i++) {
+                if (tempIncome > provTaxBrackets[i]) {
+                    deductedIncome = tempIncome - provTaxBrackets[i]; // grabbing amount over current bracket
+                    provTaxes += deductedIncome * provTaxRates[i]; // grabbing tax amount for that group
+                    tempIncome = provTaxBrackets[i];              // setting income to top of next bracket
+                }
+            }
+
         }
 
         private long[] getProvTaxBrackets(String province) {
