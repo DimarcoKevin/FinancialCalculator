@@ -51,7 +51,7 @@ namespace FinancialCalculator {
                     Array.Fill(brackets, 1, 2, 3); // not done yet
                     break;
                 case "British Columbia":
-                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    brackets = new long[] {0, 43_070, 86_141, 98_901, 120_094, 162_832, 227_091}; // https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/tax-rates
                     break;
                 case "Manitoba":
                     Array.Fill(brackets, 1, 2, 3); // not done yet
@@ -102,7 +102,7 @@ namespace FinancialCalculator {
                     Array.Fill(rates, 1, 2, 3); // not done yet
                     break;
                 case "British Columbia":
-                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    rates = new double[] {0.0506, 0.077, 0.105, 0.1229, 0.1470, 0.1680, 0.205}; // https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/tax-rates
                     break;
                 case "Manitoba":
                     Array.Fill(rates, 1, 2, 3); // not done yet
