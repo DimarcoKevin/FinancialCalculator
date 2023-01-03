@@ -62,14 +62,47 @@ namespace FinancialCalculator {
         }
 
         private double[] getProvTaxRates(String province) {
-            double[] rates = null;
+            double[]? rates = null;
 
             switch (province) {
                 case "Alberta":
-                    Array.Fill(rates, 1, 2, 3);
+                    Array.Fill(rates, 1, 2, 3); // not done yet
                     break;
                 case "British Columbia":
-                    Array.Fill(rates, 1, 2, 3);
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Manitoba":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "New Brunswick":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Newfoundland and Labrador":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Northwest Territories":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Nova Scotia":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Nunavut":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Ontario":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Prince Edward Island":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Quebec":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Saskatchewan":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    break;
+                case "Yukon":
+                    Array.Fill(rates, 1, 2, 3); // not done yet
                     break;
                 default:
                     Array.Fill(rates, 0);
