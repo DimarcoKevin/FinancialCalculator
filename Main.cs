@@ -64,10 +64,12 @@ namespace FinancialCalculator {
             // setting display values
             takeHomeResult.Text = takehome.ToString();
             fedTaxResult.Text = fedTaxes.ToString();
-            provTaxResult.Text = provTaxRates.ToString();
+            provTaxResult.Text = provTaxes.ToString();
 
         }
 
+        // tax calculator to compare against 
+        // https://www.wealthsimple.com/en-ca/tool/tax-calculator
         private long[] getProvTaxBrackets(String province) {
             long[]? brackets = null;
 
