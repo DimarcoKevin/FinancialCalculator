@@ -42,5 +42,22 @@ namespace FinancialCalculator {
             
             
         }
+
+        private long[] getProvTaxBrackets(String province) {
+            long[]? brackets = null;
+
+            switch (province) {
+                case "Alberta":
+                    Array.Fill(brackets, 1, 2, 3);
+                    break;
+                case "British Columbia":
+                    Array.Fill(brackets, 1, 2, 3);
+                    break;
+                default:
+                    break;
+            }
+
+            return brackets;
+        }
     }
 }
