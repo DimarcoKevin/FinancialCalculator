@@ -10,6 +10,7 @@ namespace FinancialCalculator {
             long[] fedTaxBrackets = {0, 50_195, 100_392, 155_625, 221_708};
             double income;
             double tempIncome;
+            double deductedIncome;
             double takehome;
             double fedTaxes = 0;
             double provTaxes = 0;
@@ -31,15 +32,23 @@ namespace FinancialCalculator {
                 return;
             }
 
+            // setting income to temporary variable
+            tempIncome = income;
+
             // calculating federal taxes
             for (int i = fedTaxBrackets.Length - 1; i >= 0; i++) {
-                if (income > fedTaxBrackets[i]) {
-                    tempIncome = income - fedTaxBrackets[i]; // grabbing amount over current bracket
-                    fedTaxes += tempIncome * fedTaxRates[i]; // grabbing tax amount for that group
-                    income = fedTaxBrackets[i];              // setting income to top of next bracket
+                if (tempIncome > fedTaxBrackets[i]) {
+                    deductedIncome = tempIncome - fedTaxBrackets[i]; // grabbing amount over current bracket
+                    fedTaxes += deductedIncome * fedTaxRates[i]; // grabbing tax amount for that group
+                    tempIncome = fedTaxBrackets[i];              // setting income to top of next bracket
                 }
             }
-            
+
+            // grabbing provincial tax rates/brackets
+            double[] provTaxRates = getProvTaxRates(province);
+            long[] provTaxBrackets = getProvTaxBrackets(province);
+
+            // calculating provincial taxes
             
         }
 
