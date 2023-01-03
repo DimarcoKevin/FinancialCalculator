@@ -6,12 +6,13 @@ namespace FinancialCalculator {
 
         private void calcButton_Click(object sender, EventArgs e) {
             String province;
-            double[] fedTaxRates = {15, 20.5, 26, 29, 33};
+            double[] fedTaxRates = {0.15, 0.205, 0.26, 0.29, 0.33};
             long[] fedTaxBrackets = {0, 50_195, 100_392, 155_625, 221_708};
             double income;
+            double tempIncome;
             double takehome;
-            double fedTaxes;
-            double provTaxes;
+            double fedTaxes = 0;
+            double provTaxes = 0;
             
 
             // showing take home labels
@@ -29,9 +30,15 @@ namespace FinancialCalculator {
                 takeHomeResult.Text = "Income must be a numeric value";
                 return;
             }
-            
 
-            
+            // calculating federal taxes
+            for (int i = fedTaxBrackets.Length - 1; i >= 0; i++) {
+                if (income > fedTaxBrackets[i]) {
+                    tempIncome = income - fedTaxBrackets[i]; // grabbing amount over current bracket
+                    fedTaxes += tempIncome * fedTaxRates[i]; // grabbing tax amount for that group
+                    income = fedTaxBrackets[i];              // setting income to top of next bracket
+                }
+            }
             
             
         }
