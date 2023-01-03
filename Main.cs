@@ -36,7 +36,7 @@ namespace FinancialCalculator {
             tempIncome = income;
 
             // calculating federal taxes
-            for (int i = fedTaxBrackets.Length - 1; i >= 0; i++) {
+            for (int i = fedTaxBrackets.Length - 1; i >= 0; i--) {
                 if (tempIncome > fedTaxBrackets[i]) {
                     deductedIncome = tempIncome - fedTaxBrackets[i]; // grabbing amount over current bracket
                     fedTaxes += deductedIncome * fedTaxRates[i]; // grabbing tax amount for that group
@@ -50,7 +50,7 @@ namespace FinancialCalculator {
             tempIncome = income;
 
             // calculating provincial taxes
-            for (int i = provTaxBrackets.Length - 1; i >= 0; i++) {
+            for (int i = provTaxBrackets.Length - 1; i >= 0; i--) {
                 if (tempIncome > provTaxBrackets[i]) {
                     deductedIncome = tempIncome - provTaxBrackets[i]; // grabbing amount over current bracket
                     provTaxes += deductedIncome * provTaxRates[i]; // grabbing tax amount for that group
