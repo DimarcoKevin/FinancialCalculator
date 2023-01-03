@@ -17,6 +17,10 @@ namespace FinancialCalculator {
             // showing take home labels
             takeHomeLabel.Visible = true;
             takeHomeResult.Visible = true;
+            fedTaxLabel.Visible = true;
+            fedTaxResult.Visible = true;
+            provTaxLabel.Visible = true;
+            provTaxResult.Visible = true;
 
             // grabbing province and validating income
             province = provinceListBox.Text.Trim();
