@@ -6,7 +6,7 @@ namespace FinancialCalculator {
 
         private void calcButton_Click(object sender, EventArgs e) {
             String province;
-            double[] fedTaxRates = {0.15, 0.205, 0.26, 0.29, 0.33};
+            double[] fedTaxRates = {0.15, 0.21, 0.26, 0.29, 0.33};
             long[] fedTaxBrackets = {0, 50_195, 100_392, 155_625, 221_708};
             double income;
             double tempIncome;
@@ -48,10 +48,10 @@ namespace FinancialCalculator {
 
             switch (province) {
                 case "Alberta":
-                    Array.Fill(brackets, 1, 2, 3); // not done yet
+                    brackets = new long[] {0, 131_220, 157_464, 209_952, 314_928}; // https://www.wealthsimple.com/en-ca/learn/alberta-tax-brackets
                     break;
                 case "British Columbia":
-                    brackets = new long[] {0, 43_070, 86_141, 98_901, 120_094, 162_832, 227_091}; // https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/tax-rates
+                    brackets = new long[] {0, 42_184, 84_369, 96_866, 117_623, 159_483, 222_420}; // https://www.wealthsimple.com/en-ca/learn/bc-tax-brackets
                     break;
                 case "Manitoba":
                     Array.Fill(brackets, 1, 2, 3); // not done yet
@@ -99,10 +99,10 @@ namespace FinancialCalculator {
 
             switch (province) {
                 case "Alberta":
-                    Array.Fill(rates, 1, 2, 3); // not done yet
+                    rates = new double[] {0.1, 0.12, 0.13, 0.14, 0.15 }; // https://www.wealthsimple.com/en-ca/learn/alberta-tax-brackets
                     break;
                 case "British Columbia":
-                    rates = new double[] {0.0506, 0.077, 0.105, 0.1229, 0.1470, 0.1680, 0.205}; // https://www2.gov.bc.ca/gov/content/taxes/income-taxes/personal/tax-rates
+                    rates = new double[] {0.0506, 0.077, 0.105, 0.1229, 0.1470, 0.1680, 0.205}; // https://www.wealthsimple.com/en-ca/learn/bc-tax-brackets
                     break;
                 case "Manitoba":
                     Array.Fill(rates, 1, 2, 3); // not done yet
