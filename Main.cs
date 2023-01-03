@@ -58,6 +58,11 @@ namespace FinancialCalculator {
                 }
             }
 
+            // calculating takehome pay
+            takehome = income - fedTaxes - provTaxes;
+
+
+
         }
 
         private long[] getProvTaxBrackets(String province) {
