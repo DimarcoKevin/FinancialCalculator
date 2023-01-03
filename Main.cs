@@ -60,5 +60,22 @@ namespace FinancialCalculator {
 
             return brackets;
         }
+
+        private double[] getProvTaxRates(String province) {
+            double[] rates = null;
+
+            switch (province) {
+                case "Alberta":
+                    Array.Fill(rates, 1, 2, 3);
+                    break;
+                case "British Columbia":
+                    Array.Fill(rates, 1, 2, 3);
+                    break;
+                default:
+                    Array.Fill(rates, 0);
+                    break;
+            }
+            return rates;
+        }
     }
 }
