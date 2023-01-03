@@ -54,6 +54,7 @@ namespace FinancialCalculator {
                     Array.Fill(brackets, 1, 2, 3);
                     break;
                 default:
+                    Array.Fill(brackets, 0);
                     break;
             }
 
