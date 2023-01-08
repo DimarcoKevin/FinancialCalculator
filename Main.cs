@@ -176,10 +176,13 @@ namespace FinancialCalculator {
    
         private void populateChart(double takeHome, double fedTaxes, double provTaxes) {
             double total = takeHome + fedTaxes + provTaxes;
+            int takeHomePercent = (int)(takeHome / total * 100);
+            int fedTaxesPercent = (int)(fedTaxes / total * 100);
+            int provTaxesPercent = (int)(provTaxes / total * 100);
 
-            barChart.progressBar1.Value = 50;
-            barChart.progressBar2.Value = 60;
-            barChart.progressBar3.Value = 100;
+            barChart.progressBar1.Value = takeHomePercent;
+            barChart.progressBar2.Value = fedTaxesPercent;
+            barChart.progressBar3.Value = provTaxesPercent;
 
         }
     
