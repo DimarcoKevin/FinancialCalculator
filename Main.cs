@@ -56,13 +56,10 @@ namespace FinancialCalculator {
             // calculating takehome pay
             takehome = income - fedTaxes - provTaxes;
 
-            // setting display values rounded to two decimals
-            //takeHomeResult.Text = String.Format("{0:0,0.00}",takehome);
-            //fedTaxResult.Text = String.Format("{0:0,0.00}", fedTaxes);
-            //provTaxResult.Text = String.Format("{0:0,0.00}", provTaxes);
-
-            // populating chart with data
-            //populateChart(takehome, fedTaxes, provTaxes);
+            
+            incomeData.setValues(income, takehome, fedTaxes, provTaxes);
+            incomeData.setChart();
+            incomeData.makeVisible();
 
         }
 
@@ -167,24 +164,6 @@ namespace FinancialCalculator {
                     break;
             }
             return rates;
-        }
-   
-        private void populateChart(double takeHome, double fedTaxes, double provTaxes) {
-            double total = takeHome + fedTaxes + provTaxes;
-            int takeHomePercent = (int)(takeHome / total * 100);
-            int fedTaxesPercent = (int)(fedTaxes / total * 100);
-            int provTaxesPercent = (int)(provTaxes / total * 100);
-
-            
-
-            //barChart.progressBar1.Value = takeHomePercent;
-            //barChart.progressBar2.Value = fedTaxesPercent;
-            //barChart.progressBar3.Value = provTaxesPercent;
-
-            //barChart.progressBar1.SetState(1);
-            //barChart.progressBar2.SetState(2);
-            //barChart.progressBar3.SetState(3);
-
         }
     
     

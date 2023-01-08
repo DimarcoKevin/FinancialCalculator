@@ -28,6 +28,7 @@
             this.provinceLabel = new System.Windows.Forms.Label();
             this.provinceListBox = new System.Windows.Forms.ListBox();
             this.calcButton = new System.Windows.Forms.Button();
+            this.incomeData = new FinancialCalculator.Objects.incomeData();
             this.SuspendLayout();
             // 
             // incomeLabel
@@ -96,11 +97,20 @@
             this.calcButton.UseVisualStyleBackColor = true;
             this.calcButton.Click += new System.EventHandler(this.calcButton_Click);
             // 
+            // incomeData
+            // 
+            this.incomeData.Location = new System.Drawing.Point(384, 56);
+            this.incomeData.Name = "incomeData";
+            this.incomeData.Size = new System.Drawing.Size(744, 273);
+            this.incomeData.TabIndex = 5;
+            this.incomeData.Visible = false;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1187, 634);
+            this.Controls.Add(this.incomeData);
             this.Controls.Add(this.calcButton);
             this.Controls.Add(this.provinceListBox);
             this.Controls.Add(this.provinceLabel);
@@ -120,5 +130,6 @@
         private Label provinceLabel;
         private ListBox provinceListBox;
         private Button calcButton;
+        private Objects.incomeData incomeData;
     }
 }

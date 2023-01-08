@@ -1,5 +1,4 @@
 C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.csproj.AssemblyReference.cache
-C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.Chart.resources
 C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.Main.resources
 C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.Objects.incomeData.resources
 C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.csproj.GenerateResource.cache
