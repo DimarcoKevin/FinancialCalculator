@@ -32,6 +32,9 @@
             this.fedTaxLabel = new System.Windows.Forms.Label();
             this.provTaxResult = new System.Windows.Forms.Label();
             this.provTaxLabel = new System.Windows.Forms.Label();
+            this.takehomePercentLabel = new System.Windows.Forms.Label();
+            this.fedTaxPercentLabel = new System.Windows.Forms.Label();
+            this.provTaxPercentLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -69,7 +72,7 @@
             // 
             this.takehomeResult.AutoSize = true;
             this.takehomeResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.takehomeResult.Location = new System.Drawing.Point(112, 62);
+            this.takehomeResult.Location = new System.Drawing.Point(53, 62);
             this.takehomeResult.Name = "takehomeResult";
             this.takehomeResult.Size = new System.Drawing.Size(49, 21);
             this.takehomeResult.TabIndex = 4;
@@ -79,7 +82,7 @@
             // 
             this.fedTaxResult.AutoSize = true;
             this.fedTaxResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fedTaxResult.Location = new System.Drawing.Point(112, 144);
+            this.fedTaxResult.Location = new System.Drawing.Point(53, 144);
             this.fedTaxResult.Name = "fedTaxResult";
             this.fedTaxResult.Size = new System.Drawing.Size(49, 21);
             this.fedTaxResult.TabIndex = 6;
@@ -89,7 +92,7 @@
             // 
             this.fedTaxLabel.AutoSize = true;
             this.fedTaxLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fedTaxLabel.Location = new System.Drawing.Point(75, 113);
+            this.fedTaxLabel.Location = new System.Drawing.Point(53, 113);
             this.fedTaxLabel.Name = "fedTaxLabel";
             this.fedTaxLabel.Size = new System.Drawing.Size(86, 21);
             this.fedTaxLabel.TabIndex = 5;
@@ -99,7 +102,7 @@
             // 
             this.provTaxResult.AutoSize = true;
             this.provTaxResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.provTaxResult.Location = new System.Drawing.Point(112, 226);
+            this.provTaxResult.Location = new System.Drawing.Point(53, 226);
             this.provTaxResult.Name = "provTaxResult";
             this.provTaxResult.Size = new System.Drawing.Size(49, 21);
             this.provTaxResult.TabIndex = 8;
@@ -109,16 +112,52 @@
             // 
             this.provTaxLabel.AutoSize = true;
             this.provTaxLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.provTaxLabel.Location = new System.Drawing.Point(58, 195);
+            this.provTaxLabel.Location = new System.Drawing.Point(53, 195);
             this.provTaxLabel.Name = "provTaxLabel";
             this.provTaxLabel.Size = new System.Drawing.Size(103, 21);
             this.provTaxLabel.TabIndex = 7;
             this.provTaxLabel.Text = "Provincial Tax";
             // 
+            // takehomePercentLabel
+            // 
+            this.takehomePercentLabel.AutoSize = true;
+            this.takehomePercentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.takehomePercentLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.takehomePercentLabel.Location = new System.Drawing.Point(427, 47);
+            this.takehomePercentLabel.Name = "takehomePercentLabel";
+            this.takehomePercentLabel.Size = new System.Drawing.Size(52, 21);
+            this.takehomePercentLabel.TabIndex = 9;
+            this.takehomePercentLabel.Text = "label1";
+            // 
+            // fedTaxPercentLabel
+            // 
+            this.fedTaxPercentLabel.AutoSize = true;
+            this.fedTaxPercentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.fedTaxPercentLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.fedTaxPercentLabel.Location = new System.Drawing.Point(427, 129);
+            this.fedTaxPercentLabel.Name = "fedTaxPercentLabel";
+            this.fedTaxPercentLabel.Size = new System.Drawing.Size(52, 21);
+            this.fedTaxPercentLabel.TabIndex = 10;
+            this.fedTaxPercentLabel.Text = "label1";
+            // 
+            // provTaxPercentLabel
+            // 
+            this.provTaxPercentLabel.AutoSize = true;
+            this.provTaxPercentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.provTaxPercentLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.provTaxPercentLabel.Location = new System.Drawing.Point(427, 210);
+            this.provTaxPercentLabel.Name = "provTaxPercentLabel";
+            this.provTaxPercentLabel.Size = new System.Drawing.Size(52, 21);
+            this.provTaxPercentLabel.TabIndex = 11;
+            this.provTaxPercentLabel.Text = "label1";
+            // 
             // incomeData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.provTaxPercentLabel);
+            this.Controls.Add(this.fedTaxPercentLabel);
+            this.Controls.Add(this.takehomePercentLabel);
             this.Controls.Add(this.provTaxResult);
             this.Controls.Add(this.provTaxLabel);
             this.Controls.Add(this.fedTaxResult);
@@ -146,5 +185,8 @@
         private Label fedTaxLabel;
         private Label provTaxResult;
         private Label provTaxLabel;
+        private Label takehomePercentLabel;
+        private Label fedTaxPercentLabel;
+        private Label provTaxPercentLabel;
     }
 }

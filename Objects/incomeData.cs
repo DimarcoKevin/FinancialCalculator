@@ -39,9 +39,17 @@ namespace FinancialCalculator.Objects {
             // validating there is data populated first
             if (Income == 0 || Takehome == 0) return;
 
-            progressBar1.Value = (int)(Takehome / Income * 100);
-            progressBar2.Value = (int)(FedTax / Income * 100);
-            progressBar3.Value = (int)(ProvTax / Income * 100);
+            int takehomePercent = (int)(Takehome / Income * 100);
+            int fedTaxPercent = (int)(FedTax / Income * 100);
+            int provTaxPercent = (int)(ProvTax / Income * 100);
+
+            takehomePercentLabel.Text = takehomePercent.ToString() + "%";
+            fedTaxPercentLabel.Text = fedTaxPercent.ToString() + "%";
+            provTaxPercentLabel.Text = provTaxPercent.ToString() + "%";
+
+            progressBar1.Value = takehomePercent;
+            progressBar2.Value = fedTaxPercent;
+            progressBar3.Value = provTaxPercent;
 
             progressBar1.SetState(1);
             progressBar2.SetState(2);
