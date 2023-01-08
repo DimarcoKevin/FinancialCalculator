@@ -66,8 +66,8 @@
 
         #endregion
 
-        private ProgressBar progressBar1;
-        private ProgressBar progressBar2;
-        private ProgressBar progressBar3;
+        public ProgressBar progressBar1;
+        public ProgressBar progressBar2;
+        public ProgressBar progressBar3;
     }
 }

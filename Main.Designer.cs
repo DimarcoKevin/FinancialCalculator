@@ -34,6 +34,7 @@
             this.provTaxLabel = new System.Windows.Forms.Label();
             this.fedTaxResult = new System.Windows.Forms.Label();
             this.provTaxResult = new System.Windows.Forms.Label();
+            this.barChart = new FinancialCalculator.Chart();
             this.SuspendLayout();
             // 
             // incomeLabel
@@ -168,11 +169,19 @@
             this.provTaxResult.Text = "TEMP";
             this.provTaxResult.Visible = false;
             // 
+            // barChart
+            // 
+            this.barChart.Location = new System.Drawing.Point(441, 224);
+            this.barChart.Name = "barChart";
+            this.barChart.Size = new System.Drawing.Size(532, 241);
+            this.barChart.TabIndex = 11;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1187, 634);
+            this.Controls.Add(this.barChart);
             this.Controls.Add(this.provTaxResult);
             this.Controls.Add(this.fedTaxResult);
             this.Controls.Add(this.provTaxLabel);
@@ -204,5 +213,6 @@
         private Label provTaxLabel;
         private Label fedTaxResult;
         private Label provTaxResult;
+        private Chart barChart;
     }
 }

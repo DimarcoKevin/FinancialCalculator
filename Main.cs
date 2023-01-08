@@ -66,6 +66,9 @@ namespace FinancialCalculator {
             fedTaxResult.Text = String.Format("{0:0,0.00}", fedTaxes);
             provTaxResult.Text = String.Format("{0:0,0.00}", provTaxes);
 
+            // populating chart with data
+            populateChart(takehome, fedTaxes, provTaxes);
+
         }
 
         // tax calculator to compare against 
@@ -170,5 +173,16 @@ namespace FinancialCalculator {
             }
             return rates;
         }
+   
+        private void populateChart(double takeHome, double fedTaxes, double provTaxes) {
+            double total = takeHome + fedTaxes + provTaxes;
+
+            barChart.progressBar1.Value = 50;
+            barChart.progressBar2.Value = 60;
+            barChart.progressBar3.Value = 100;
+
+        }
+    
+    
     }
 }
