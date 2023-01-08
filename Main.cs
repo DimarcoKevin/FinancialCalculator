@@ -19,19 +19,11 @@ namespace FinancialCalculator {
             double provTaxes = 0;
             
 
-            // showing take home labels
-            takeHomeLabel.Visible = true;
-            takeHomeResult.Visible = true;
-            fedTaxLabel.Visible = true;
-            fedTaxResult.Visible = true;
-            provTaxLabel.Visible = true;
-            provTaxResult.Visible = true;
-
             // grabbing province and validating income
             province = provinceListBox.Text.Trim();
             if (double.TryParse(incomeTextBox.Text, out income)) {
             } else {
-                takeHomeResult.Text = "Income must be a numeric value";
+                //takeHomeResult.Text = "Income must be a numeric value";
                 return;
             }
 
@@ -65,9 +57,9 @@ namespace FinancialCalculator {
             takehome = income - fedTaxes - provTaxes;
 
             // setting display values rounded to two decimals
-            takeHomeResult.Text = String.Format("{0:0,0.00}",takehome);
-            fedTaxResult.Text = String.Format("{0:0,0.00}", fedTaxes);
-            provTaxResult.Text = String.Format("{0:0,0.00}", provTaxes);
+            //takeHomeResult.Text = String.Format("{0:0,0.00}",takehome);
+            //fedTaxResult.Text = String.Format("{0:0,0.00}", fedTaxes);
+            //provTaxResult.Text = String.Format("{0:0,0.00}", provTaxes);
 
             // populating chart with data
             //populateChart(takehome, fedTaxes, provTaxes);
