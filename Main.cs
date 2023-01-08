@@ -70,7 +70,7 @@ namespace FinancialCalculator {
             provTaxResult.Text = String.Format("{0:0,0.00}", provTaxes);
 
             // populating chart with data
-            populateChart(takehome, fedTaxes, provTaxes);
+            //populateChart(takehome, fedTaxes, provTaxes);
 
         }
 

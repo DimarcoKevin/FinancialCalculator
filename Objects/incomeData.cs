@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinancialCalculator {
-    public partial class IncomeDataChart : UserControl {
-        public IncomeDataChart() {
+namespace FinancialCalculator.Objects {
+    public partial class incomeData : UserControl {
+        public incomeData() {
             InitializeComponent();
         }
     }

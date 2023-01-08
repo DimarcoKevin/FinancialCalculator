@@ -1,5 +1,5 @@
-﻿namespace FinancialCalculator {
-    partial class IncomeDataChart {
+﻿namespace FinancialCalculator.Objects {
+    partial class incomeData {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -36,30 +36,30 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(164, 31);
+            this.progressBar1.Location = new System.Drawing.Point(196, 26);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(510, 60);
+            this.progressBar1.Size = new System.Drawing.Size(514, 63);
             this.progressBar1.TabIndex = 0;
             // 
             // progressBar2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(164, 112);
+            this.progressBar2.Location = new System.Drawing.Point(196, 108);
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(510, 60);
+            this.progressBar2.Size = new System.Drawing.Size(514, 63);
             this.progressBar2.TabIndex = 1;
             // 
             // progressBar3
             // 
-            this.progressBar3.Location = new System.Drawing.Point(164, 194);
+            this.progressBar3.Location = new System.Drawing.Point(196, 189);
             this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(510, 60);
+            this.progressBar3.Size = new System.Drawing.Size(514, 63);
             this.progressBar3.TabIndex = 2;
             // 
             // takehomeLabel
             // 
             this.takehomeLabel.AutoSize = true;
             this.takehomeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.takehomeLabel.Location = new System.Drawing.Point(39, 33);
+            this.takehomeLabel.Location = new System.Drawing.Point(53, 31);
             this.takehomeLabel.Name = "takehomeLabel";
             this.takehomeLabel.Size = new System.Drawing.Size(108, 21);
             this.takehomeLabel.TabIndex = 3;
@@ -69,7 +69,7 @@
             // 
             this.takehomeResult.AutoSize = true;
             this.takehomeResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.takehomeResult.Location = new System.Drawing.Point(98, 67);
+            this.takehomeResult.Location = new System.Drawing.Point(112, 62);
             this.takehomeResult.Name = "takehomeResult";
             this.takehomeResult.Size = new System.Drawing.Size(49, 21);
             this.takehomeResult.TabIndex = 4;
@@ -79,7 +79,7 @@
             // 
             this.fedTaxResult.AutoSize = true;
             this.fedTaxResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fedTaxResult.Location = new System.Drawing.Point(98, 149);
+            this.fedTaxResult.Location = new System.Drawing.Point(112, 144);
             this.fedTaxResult.Name = "fedTaxResult";
             this.fedTaxResult.Size = new System.Drawing.Size(49, 21);
             this.fedTaxResult.TabIndex = 6;
@@ -89,7 +89,7 @@
             // 
             this.fedTaxLabel.AutoSize = true;
             this.fedTaxLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fedTaxLabel.Location = new System.Drawing.Point(61, 115);
+            this.fedTaxLabel.Location = new System.Drawing.Point(75, 113);
             this.fedTaxLabel.Name = "fedTaxLabel";
             this.fedTaxLabel.Size = new System.Drawing.Size(86, 21);
             this.fedTaxLabel.TabIndex = 5;
@@ -99,7 +99,7 @@
             // 
             this.provTaxResult.AutoSize = true;
             this.provTaxResult.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.provTaxResult.Location = new System.Drawing.Point(98, 231);
+            this.provTaxResult.Location = new System.Drawing.Point(112, 226);
             this.provTaxResult.Name = "provTaxResult";
             this.provTaxResult.Size = new System.Drawing.Size(49, 21);
             this.provTaxResult.TabIndex = 8;
@@ -109,13 +109,13 @@
             // 
             this.provTaxLabel.AutoSize = true;
             this.provTaxLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.provTaxLabel.Location = new System.Drawing.Point(44, 197);
+            this.provTaxLabel.Location = new System.Drawing.Point(58, 195);
             this.provTaxLabel.Name = "provTaxLabel";
             this.provTaxLabel.Size = new System.Drawing.Size(103, 21);
             this.provTaxLabel.TabIndex = 7;
             this.provTaxLabel.Text = "Provincial Tax";
             // 
-            // IncomeDataChart
+            // incomeData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -128,8 +128,8 @@
             this.Controls.Add(this.progressBar3);
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
-            this.Name = "IncomeDataChart";
-            this.Size = new System.Drawing.Size(683, 269);
+            this.Name = "incomeData";
+            this.Size = new System.Drawing.Size(744, 273);
             this.ResumeLayout(false);
             this.PerformLayout();
 
