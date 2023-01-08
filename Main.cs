@@ -177,13 +177,13 @@ namespace FinancialCalculator {
 
             
 
-            barChart.progressBar1.Value = takeHomePercent;
-            barChart.progressBar2.Value = fedTaxesPercent;
-            barChart.progressBar3.Value = provTaxesPercent;
+            //barChart.progressBar1.Value = takeHomePercent;
+            //barChart.progressBar2.Value = fedTaxesPercent;
+            //barChart.progressBar3.Value = provTaxesPercent;
 
-            barChart.progressBar1.SetState(1);
-            barChart.progressBar2.SetState(2);
-            barChart.progressBar3.SetState(3);
+            //barChart.progressBar1.SetState(1);
+            //barChart.progressBar2.SetState(2);
+            //barChart.progressBar3.SetState(3);
 
         }
     
