@@ -4,7 +4,16 @@
     <Compile Update="Main.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Objects\expenseData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Objects\importExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Objects\incomeData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Objects\pieChart.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>

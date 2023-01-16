@@ -16,3 +16,6 @@ C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\ne
 C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.pdb
 C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.genruntimeconfig.cache
 C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\ref\FinancialCalculator.dll
+C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.Objects.expenseData.resources
+C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.Objects.pieChart.resources
+C:\Users\kevin\source\repos\FinancialCalculator\FinancialCalculator\obj\Debug\net6.0-windows\FinancialCalculator.Objects.importExcel.resources

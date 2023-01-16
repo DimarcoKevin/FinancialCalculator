@@ -29,6 +29,7 @@
             this.provinceListBox = new System.Windows.Forms.ListBox();
             this.calcButton = new System.Windows.Forms.Button();
             this.incomeData = new FinancialCalculator.Objects.incomeData();
+            this.importExcel1 = new FinancialCalculator.Objects.importExcel();
             this.SuspendLayout();
             // 
             // incomeLabel
@@ -99,17 +100,29 @@
             // 
             // incomeData
             // 
+            this.incomeData.FedTax = 0D;
+            this.incomeData.Income = 0D;
             this.incomeData.Location = new System.Drawing.Point(384, 56);
             this.incomeData.Name = "incomeData";
+            this.incomeData.ProvTax = 0D;
             this.incomeData.Size = new System.Drawing.Size(744, 273);
             this.incomeData.TabIndex = 5;
+            this.incomeData.Takehome = 0D;
             this.incomeData.Visible = false;
+            // 
+            // importExcel1
+            // 
+            this.importExcel1.Location = new System.Drawing.Point(543, 478);
+            this.importExcel1.Name = "importExcel1";
+            this.importExcel1.Size = new System.Drawing.Size(555, 49);
+            this.importExcel1.TabIndex = 6;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1187, 634);
+            this.Controls.Add(this.importExcel1);
             this.Controls.Add(this.incomeData);
             this.Controls.Add(this.calcButton);
             this.Controls.Add(this.provinceListBox);
@@ -131,5 +144,6 @@
         private ListBox provinceListBox;
         private Button calcButton;
         private Objects.incomeData incomeData;
+        private Objects.importExcel importExcel1;
     }
 }
